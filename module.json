@@ -1,6 +1,6 @@
 {
-  "name": "_kompendien",
-  "title": "_Vorlage eigene Kompendien",
+  "name": "kompendien-vorlage",
+  "title": "Vorlage für eigene Kompendien",
   "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
   "author": "KarstenW",
   "version": "",
@@ -12,73 +12,73 @@
       "name": "actor-gm",
       "entity": "Actor",
       "path": "packs/actor-gm.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Actors Spieler",
       "name": "actor-player",
       "entity": "Actor",
       "path": "packs/actor-player.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Items GM",
       "name": "item-gm",
       "entity": "Item",
       "path": "packs/item-gm.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Items Spieler",
       "name": "item-player",
       "entity": "Item",
       "path": "packs/item-player.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Journals GM",
       "name": "journal-gm",
       "entity": "JournalEntry",
       "path": "packs/journal-gm.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Journals Spieler",
       "name": "journal-player",
       "entity": "JournalEntry",
       "path": "packs/journal-player.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Makros",
       "name": "macro",
       "entity": "Macro",
       "path": "packs/macro.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Playlists",
       "name": "playlist",
       "entity": "Playlist",
       "path": "packs/playlist.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Tables",
       "name": "rolltable",
       "entity": "RollTable",
       "path": "packs/rolltable.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     },
     {
       "label": "Scenes",
       "name": "scene",
       "entity": "Scene",
       "path": "packs/scene.db",
-      "module": "_kompendien"
+      "module": "kompendien-vorlage"
     }
   ],
   "url": "https://gitlab.com/KarstenW76/kompendien-vorlage/",
   "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json",
-  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/_kompendien-master.zip"
+  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip"
 }
