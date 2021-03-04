@@ -78,7 +78,7 @@
       "module": "_kompendien"
     }
   ],
-  "url": "https://gitlab.com/KarstenW76/_kompendien/",
-  "manifest": "https://gitlab.com/KarstenW76/_kompendien/-/raw/master/module.json",
-  "download": "https://gitlab.com/KarstenW76/_kompendien/-/archive/master/_kompendien-master.zip"
+  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage/",
+  "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json",
+  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/_kompendien-master.zip"
 }
