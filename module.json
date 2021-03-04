@@ -1,0 +1,84 @@
+{
+  "name": "_kompendien",
+  "title": "Eigene Kompendien",
+  "description": "Eigene Kompendien-Sammlung",
+  "author": "ich",
+  "version": "",
+  "minimumCoreVersion": "0.7.0",
+  "compatibleCoreVersion": "0.7.9",
+  "packs": [
+    {
+      "label": "Actors GM",
+      "name": "actor-gm",
+      "entity": "Actor",
+      "path": "packs/actor-gm.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Actors Spieler",
+      "name": "actor-player",
+      "entity": "Actor",
+      "path": "packs/actor-player.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Items GM",
+      "name": "item-gm",
+      "entity": "Item",
+      "path": "packs/item-gm.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Items Spieler",
+      "name": "item-player",
+      "entity": "Item",
+      "path": "packs/item-player.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Journals GM",
+      "name": "journal-gm",
+      "entity": "JournalEntry",
+      "path": "packs/journal-gm.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Journals Spieler",
+      "name": "journal-player",
+      "entity": "JournalEntry",
+      "path": "packs/journal-player.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Makros",
+      "name": "macro",
+      "entity": "Macro",
+      "path": "packs/macro.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Playlists",
+      "name": "playlist",
+      "entity": "Playlist",
+      "path": "packs/playlist.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Tables",
+      "name": "rolltable",
+      "entity": "RollTable",
+      "path": "packs/rolltable.db",
+      "module": "_kompendien"
+    },
+    {
+      "label": "Scenes",
+      "name": "scene",
+      "entity": "Scene",
+      "path": "packs/scene.db",
+      "module": "_kompendien"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
