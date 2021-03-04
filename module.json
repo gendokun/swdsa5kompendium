@@ -1,8 +1,8 @@
 {
   "name": "_kompendien",
-  "title": "Eigene Kompendien",
-  "description": "Eigene Kompendien-Sammlung",
-  "author": "ich",
+  "title": "_Vorlage eigene Kompendien",
+  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
+  "author": "KarstenW",
   "version": "",
   "minimumCoreVersion": "0.7.0",
   "compatibleCoreVersion": "0.7.9",
@@ -78,7 +78,7 @@
       "module": "_kompendien"
     }
   ],
-  "url": "",
-  "manifest": "",
-  "download": ""
+  "url": "https://gitlab.com/KarstenW76/_kompendien/",
+  "manifest": "https://gitlab.com/KarstenW76/_kompendien/-/raw/master/module.json",
+  "download": "https://gitlab.com/KarstenW76/_kompendien/-/archive/master/_kompendien-master.zip"
 }
