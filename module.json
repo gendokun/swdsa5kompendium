@@ -3,7 +3,7 @@
   "title": "Vorlage für eigene Kompendien",
   "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
   "author": "KarstenW",
-  "version": "",
+  "version": "1.0",
   "minimumCoreVersion": "0.7.0",
   "compatibleCoreVersion": "0.7.9",
   "packs": [
