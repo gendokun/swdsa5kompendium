@@ -3,9 +3,9 @@
   "title": "Vorlage für eigene Kompendien",
   "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
   "author": "KarstenW",
-  "version": "1.0",
+  "version": "1.1",
   "minimumCoreVersion": "0.7.0",
-  "compatibleCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.8.9",
   "packs": [
     {
       "label": "Actors GM",
