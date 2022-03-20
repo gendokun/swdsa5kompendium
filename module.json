@@ -3,9 +3,9 @@
   "title": "Vorlage für eigene Kompendien",
   "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
   "author": "KarstenW",
-  "version": "2.0",
+  "version": "3.0",
   "minimumCoreVersion": "0.7.0",
-  "compatibleCoreVersion": "9.241",
+  "compatibleCoreVersion": "9",
   "packs": [
     {
       "label": "Actors GM",
@@ -19,6 +19,13 @@
       "name": "actor-player",
       "entity": "Actor",
       "path": "packs/actor-player.db",
+      "module": "kompendien-vorlage"
+    },
+    {
+      "label": "Kartendecks",
+      "name": "cards",
+      "entity": "Cards",
+      "path": "packs/cards.db",
       "module": "kompendien-vorlage"
     },
     {
