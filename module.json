@@ -127,6 +127,6 @@
     }
   ],
   "socket": false,
-  "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/blob/master/module.json",
+  "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/raw/master/module.json",
   "download": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/archive/master/kompendien-vorlage-v10-master.zip"
 }
