@@ -143,21 +143,13 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 
    wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
 
-5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen. Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern.
+5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Aktivierung und Nutzung angeboten wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen. Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern.
 
 ```javascript
   "system": "dnd5e",  
   "relationships": {  
     "systems": [  
-      {  
-        "id": "dnd5e",  
-        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",  
-        "compatibility": {  
-          "minimum": "2.0.0",  
-          "verified": "2.0"  
-        }  
-      }  
-    ]
+      {"id": "dnd5e"}]
   },  
 ```
 
