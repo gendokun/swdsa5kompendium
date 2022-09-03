@@ -69,7 +69,7 @@ Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Card
 
 **Was wenn ich weitere Kompendien benötige?** 
 Das ist gar kein Problem: Wenn Du z.B. noch ein 3. Item-Kompendium brauchst, duplizierst Du eines der beiden Item-Kompendien (item-gm.db oder item-player.db) und gibst der Datei einen passenden neuen Namen (z.B. item-faehigkeiten). Beachte unbedingt, dass Du keine Umlaute, Sonderzeichen oder Großschreibung verwendest nur auch in Englisch existente Buchstaben und Bindestriche.
-Dann gehst Du in die module.json und kopierst in dem Fall den ganzen folgenden Bereich und fügst ihn direkt danach wieder ein (quasi auch ein dupliziert). Dann nimmst Du die oben unter 2.g beschriebenen Anpassungen vor.
+Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Eintrag und fügst ihn direkt danach als Kopie wieder ein (sieht aus wie nachstehend, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). Dann nimmst Du die oben unter 2.f beschriebenen Anpassungen vor.
 
     {
 
@@ -110,14 +110,22 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 2. Lösche den Eintrag 
        "author": "",
     und füge stattdessen den Eintrag
+
          "authors": [
+
            {
+
              "name": "",
+
              "discord": "",
+
              "flags": {}
+
            }
+
          ],
-    ein.
+
+    ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
 3. Löschen die Einträge
        "minimumCoreVersion": "9",
@@ -128,13 +136,14 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
           "verified": "10",
           "maximum": "10"
        },
-    ein.
+    ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
 4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
        "system": "dnd5e",
    wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
 
-5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
+5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). 
+Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
     "system": "dnd5e",
     "relationships": {
       "systems": [
