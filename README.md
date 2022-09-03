@@ -158,17 +158,17 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). 
 Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
 
-    "system": "dnd5e",  
-    "relationships": {  
-      "systems": [  
-        {  
-          "id": "dnd5e",  
-          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",  
-          "compatibility": {  
-              "minimum": "2.0.0",  
-              "verified": "2.0"  
-          }  
-        }  
-      ],  
+>    "system": "dnd5e",  
+>   "relationships": {  
+>      "systems": [  
+>        {  
+>          "id": "dnd5e",  
+>          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",  
+>          "compatibility": {  
+>              "minimum": "2.0.0",  
+>              "verified": "2.0"  
+>          }  
+>        }  
+>      ],  
 
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
