@@ -9,7 +9,6 @@
       "flags": {}
     }
   ],
-  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10",
   "flags": {},
   "version": "1.0",
   "compatibility": {
@@ -127,6 +126,7 @@
     }
   ],
   "socket": false,
+  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10",
   "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/raw/master/module.json",
   "download": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/archive/master/kompendien-vorlage-v10-master.zip"
 }
