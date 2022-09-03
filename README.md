@@ -108,7 +108,9 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 1.  Ändere das Wort "name" oben in "id"
 
 2. Lösche den Eintrag 
+
        "author": "",
+
     und füge stattdessen den Eintrag
 
          "authors": [
@@ -128,33 +130,56 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
     ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
 3. Löschen die Einträge
+
        "minimumCoreVersion": "9",
+
        "compatibleCoreVersion": "9",
+
     und füge stattdessen den Eintrag
+
        "compatibility": {
+
           "minimum": "10",
+
           "verified": "10",
+
           "maximum": "10"
+
        },
+
     ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
 4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
+
        "system": "dnd5e",
+
    wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
 
 5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). 
 Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
+
     "system": "dnd5e",
+
     "relationships": {
+
       "systems": [
+
         {
+
           "id": "dnd5e",
+
           "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+
           "compatibility": {
+
               "minimum": "2.0.0",
+
               "verified": "2.0"
+
           }
+
         }
+
       ],
 
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
