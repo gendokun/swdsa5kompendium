@@ -1,14 +1,22 @@
 {
-  "name": "kompendien-vorlage-v9",
-  "title": "Vorlage für eigene Kompendien (bis V 9)",
-  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung in Foundry VTT bis max. V 9",
-  "author": "KarstenW",
-  "authors": [],
+  "id": "kompendien-vorlage-v10",
+  "title": "Vorlage für eigene Kompendien (V10)",
+  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung in Foundry VTT Version 10"",
+  "authors": [
+    {
+      "name": "KarstenW",
+      "discord": "KarstenW#7984",
+      "flags": {}
+    }
+  ],
   "url": "https://gitlab.com/KarstenW76/kompendien-vorlage/",
   "flags": {},
-  "version": "3.5",
-  "minimumCoreVersion": "0.7.0",
-  "compatibleCoreVersion": "9",
+  "version": "1.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
   "scripts": [],
   "esmodules": [],
   "styles": [],
@@ -17,18 +25,20 @@
     {
       "label": "Actors GM",
       "name": "actor-gm",
+      "system": "dnd5e",
       "entity": "Actor",
       "path": "packs/actor-gm.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Actor",
       "private": false
     },
     {
       "label": "Actors Spieler",
       "name": "actor-player",
+      "system": "dnd5e",
       "entity": "Actor",
       "path": "packs/actor-player.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Actor",
       "private": false
     },
@@ -37,25 +47,27 @@
       "name": "cards",
       "entity": "Cards",
       "path": "packs/cards.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Cards",
       "private": false
     },
     {
       "label": "Items GM",
       "name": "item-gm",
+      "system": "dnd5e",
       "entity": "Item",
       "path": "packs/item-gm.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Item",
       "private": false
     },
     {
       "label": "Items Spieler",
       "name": "item-player",
+      "system": "dnd5e",
       "entity": "Item",
       "path": "packs/item-player.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Item",
       "private": false
     },
@@ -64,7 +76,7 @@
       "name": "journal-gm",
       "entity": "JournalEntry",
       "path": "packs/journal-gm.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "JournalEntry",
       "private": false
     },
@@ -73,7 +85,7 @@
       "name": "journal-player",
       "entity": "JournalEntry",
       "path": "packs/journal-player.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "JournalEntry",
       "private": false
     },
@@ -82,7 +94,7 @@
       "name": "macro",
       "entity": "Macro",
       "path": "packs/macro.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Macro",
       "private": false
     },
@@ -91,7 +103,7 @@
       "name": "playlist",
       "entity": "Playlist",
       "path": "packs/playlist.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Playlist",
       "private": false
     },
@@ -100,7 +112,7 @@
       "name": "rolltable",
       "entity": "RollTable",
       "path": "packs/rolltable.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "RollTable",
       "private": false
     },
@@ -109,17 +121,12 @@
       "name": "scene",
       "entity": "Scene",
       "path": "packs/scene.db",
-      "module": "kompendien-vorlage",
+      "module": "kompendien-vorlage-v10",
       "type": "Scene",
       "private": false
     }
   ],
-  "system": [],
-  "dependencies": [],
   "socket": false,
   "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json",
-  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip",
-  "protected": false,
-  "coreTranslation": false,
-  "library": false
+  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip"
 }
