@@ -70,12 +70,19 @@ Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Card
 **Was wenn ich weitere Kompendien benötige?** 
 Das ist gar kein Problem: Wenn Du z.B. noch ein 3. Item-Kompendium brauchst, duplizierst Du eines der beiden Item-Kompendien (item-gm.db oder item-player.db) und gibst der Datei einen passenden neuen Namen (z.B. item-faehigkeiten). Beachte unbedingt, dass Du keine Umlaute, Sonderzeichen oder Großschreibung verwendest nur auch in Englisch existente Buchstaben und Bindestriche.
 Dann gehst Du in die module.json und kopierst in dem Fall den ganzen folgenden Bereich und fügst ihn direkt danach wieder ein (quasi auch ein dupliziert). Dann nimmst Du die oben unter 2.g beschriebenen Anpassungen vor.
+
     {
+
       "label": "Items GM",
+
       "name": "item-gm",
+
       "entity": "Item",
+
       "path": "packs/item-gm.db",
+
       "module": "kompendien-vorlage"
+
     },
     
 **Ein paar Tipps** 
