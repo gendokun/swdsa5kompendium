@@ -18,10 +18,15 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 2. Die Datei module.json im neuen Ordner mit einem Texteditor öffnen und folgende Änderungen vornehmen:
 
     a) **id** muss der neue eigene Ordnername sein, z.B. deadlands-kompendien
+
     b) **title** ist der Name Deines Moduls, unter der Dein Modul dann nachher in Foundry VTT zu finden ist (unter Modulen wie in den Welten, wo Du es aktivieren willst)
+
     c) Bei **description** kannst Du ein paar weitere Informationen angeben, die Du dann auch als Beschreibung zum Modul nachher siehst
+
     d) **authors** gerne ändern, das ist nur meine Vorlage, ich erhebe aber keine Benennungsansprüche, trag Dich hier bitte ein
+
     e) **compatibility** ist die Foundry Version, die mindestens vorhanden sein muss, um das Modul nutzen zu können, die positiv verifiziert wurde, und die maximal funktional ist. I.d.R. genügt es, wenn hier jeweils "10" enthalten ist (mit Version 9 oder früher ist dieses Modul nicht kompatibel, s.o.)
+    
     f) in jedem der db-Kompendien-Dateien folgende Änderungen vornehmen:
     
 - **label** ist der Titel, den dieses Kompendium nachher in Deiner Welt unter Kompendien haben soll, also der Anzeigetitel
