@@ -1,91 +1,125 @@
 {
-  "name": "kompendien-vorlage",
-  "title": "Vorlage für eigene Kompendien",
-  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung",
+  "name": "kompendien-vorlage-v9",
+  "title": "Vorlage für eigene Kompendien (bis V 9)",
+  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung in Foundry VTT bis max. V 9",
   "author": "KarstenW",
-  "version": "3.0",
+  "authors": [],
+  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage/",
+  "flags": {},
+  "version": "3.5",
   "minimumCoreVersion": "0.7.0",
   "compatibleCoreVersion": "9",
+  "scripts": [],
+  "esmodules": [],
+  "styles": [],
+  "languages": [],
   "packs": [
     {
       "label": "Actors GM",
       "name": "actor-gm",
       "entity": "Actor",
       "path": "packs/actor-gm.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Actor",
+      "private": false
     },
     {
       "label": "Actors Spieler",
       "name": "actor-player",
       "entity": "Actor",
       "path": "packs/actor-player.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Actor",
+      "private": false
     },
     {
       "label": "Kartendecks",
       "name": "cards",
       "entity": "Cards",
       "path": "packs/cards.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Cards",
+      "private": false
     },
     {
       "label": "Items GM",
       "name": "item-gm",
       "entity": "Item",
       "path": "packs/item-gm.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Item",
+      "private": false
     },
     {
       "label": "Items Spieler",
       "name": "item-player",
       "entity": "Item",
       "path": "packs/item-player.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Item",
+      "private": false
     },
     {
       "label": "Journals GM",
       "name": "journal-gm",
       "entity": "JournalEntry",
       "path": "packs/journal-gm.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "JournalEntry",
+      "private": false
     },
     {
       "label": "Journals Spieler",
       "name": "journal-player",
       "entity": "JournalEntry",
       "path": "packs/journal-player.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "JournalEntry",
+      "private": false
     },
     {
       "label": "Makros",
       "name": "macro",
       "entity": "Macro",
       "path": "packs/macro.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Macro",
+      "private": false
     },
     {
       "label": "Playlists",
       "name": "playlist",
       "entity": "Playlist",
       "path": "packs/playlist.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Playlist",
+      "private": false
     },
     {
       "label": "Tables",
       "name": "rolltable",
       "entity": "RollTable",
       "path": "packs/rolltable.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "RollTable",
+      "private": false
     },
     {
       "label": "Scenes",
       "name": "scene",
       "entity": "Scene",
       "path": "packs/scene.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage",
+      "type": "Scene",
+      "private": false
     }
   ],
-  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage/",
+  "system": [],
+  "dependencies": [],
+  "socket": false,
   "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json",
-  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip"
+  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
 }
