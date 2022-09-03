@@ -1,10 +1,11 @@
-Modul "kompendien-vorlage" (Vorlage für eigene Kompendien) für Foundry VTT **bis max. Version 9**
+Modul "kompendien-vorlage-v10" (Vorlage für eigene Kompendien) für Foundry VTT **Version 10**
+Die ältere Version 9 Fassung des Moduls ist hier zu finden: https://gitlab.com/KarstenW76/kompendien-vorlage (Manifest-URL: https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json)
 
-Das Modul "kompendien-vorlage" ist eine universelle Vorlage für eigen-erstellte Kompendien in Foundry VTT.
+Das Modul "kompendien-vorlage-v10" ist eine universelle Vorlage für eigen-erstellte Kompendien in Foundry VTT Version 10.
 Ziel ist, schnell und einfach eigene Kompendien zu erstellen und in verschiedenen Welten einzusetzen.
 
 **Installation:** 
-Die Installation der Vorlage kann über das Manifest erfolgen (hierfür den Manifest-Link in der Admin-Oberfläche von Foundry VTT über den Modul-Installer installieren, ganz unten kann die Manifest-URL einkopiert werden: https://gitlab.com/KarstenW76/kompendien-vorlage/-/raw/master/module.json). 
+Die Installation der Vorlage kann über das Manifest erfolgen (hierfür den Manifest-Link in der Admin-Oberfläche von Foundry VTT über den Modul-Installer installieren, ganz unten kann die Manifest-URL einkopiert werden: https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/raw/master/module.json). 
 Ebenso ist aber der Direkt-Download (z.B. als zip: https://gitlab.com/KarstenW76/kompendien-vorlage/-/archive/master/kompendien-vorlage-master.zip) möglich. In diesem Fall die zip-Datei so in den Ordner DATA\modules von Foundry VTT entpacken, dass sich hierin dann der Ordner "kompendien-vorlage" befindet, mit der Datei "module.json" und dem Unterorder "packs" (dieser wiederum enthält die 11 *.db-Dateien).
 
 **Anpassung für eigenen Nutzen:** 
