@@ -95,4 +95,50 @@ Auf jeden Fall:
 
     3. Journal erstellen und dann aus Deinem Modul-Kompendium die Zauber auf das Sheet ziehen (nicht aus der Welt selbst!). Davor oder danach kannst Du auch Deine Notiz in das JournalEntry-Kompendium exportieren (wichtig ist immer, das die Eintäge, die Du verlinken willst, bereits in Deinem Modul-Kompendium liegen, wenn Du sie zur Verknüpfung irgendwo hinziehst, da sich beim Verschieben danach die Links ändern würde; ein Link zu einem Item, das in Welt A liegt, lässt sich in Welt B nicht mehr aufrufen)
 
+**Ich habe schon Welten-Kompendien in V9, was muss ich tun, um diese in V10 weiterzunutzen?**
+Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json Deines Kompendium-Moduls erforderlich, die ich Dir gerne zur besseren Übersichtlichkeit hier beschreibe:
+
+1.  Ändere das Wort "name" oben in "id"
+
+2. Lösche den Eintrag 
+       "author": "",
+    und füge stattdessen den Eintrag
+         "authors": [
+           {
+             "name": "",
+             "discord": "",
+             "flags": {}
+           }
+         ],
+    ein.
+
+3. Löschen die Einträge
+       "minimumCoreVersion": "9",
+       "compatibleCoreVersion": "9",
+    und füge stattdessen den Eintrag
+       "compatibility": {
+          "minimum": "10",
+          "verified": "10",
+          "maximum": "10"
+       },
+    ein.
+
+4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
+       "system": "dnd5e",
+   wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
+
+5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
+    "system": "dnd5e",
+    "relationships": {
+      "systems": [
+        {
+          "id": "dnd5e",
+          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+          "compatibility": {
+              "minimum": "2.0.0",
+              "verified": "2.0"
+          }
+        }
+      ],
+
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
