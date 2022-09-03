@@ -47,7 +47,7 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 
 3. Sollte Foundry gerade aktiv sein schließe es jetzt einmal komplett und starte es neu. Wenn Du keinen Fehler eingebaut hast, ist dein Kompendien-Modul jetzt zu finden und in Deinen Welten verwendbar, denk dran, es in Deiner/n Welt/en unter "Manage Modules" zu aktivieren.
 
-**Welche Vorlagen sind denn jetzt hier eigentlich dabei?** 
+**Welche Vorlagen sind denn jetzt hier eigentlich dabei?**  
 - 2x Actor: Für den GM (für NPC, Kreaturen etc, zum unsichtbar schalten) sowie für Spieler (z.B. für Archetypen, fertige Charaktere etc)  
 - 1x Cards: Für eventuell selbst erstellte Spielkartendecks etc.  
 - 2x Item: Für den GM (für was die Spieler nicht sehen sollen, zum unsichtbar schalten) sowie für Spieler (z.B. Gegenstände, Waffen, Rüstungen, Zauber, Fähigkeiten etc)  
@@ -57,10 +57,10 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 - 1x Rolltable, da es i.d.R. eh Sinn macht oder gar erforderlich ist, diese zur Nutzung ins Spiel zu importieren, muss hier nicht zwischen GM + Spieler differenziert werden  
 - 1x Scene: Szenen sind nur für den GM relevant (bei Nutzung einer Landkarte oder Battlemap schaltest Du als GM einfach die Szene den Spielern frei, nicht aber das Kompendium, dies gehört unsichtbar)  
 
-**Wie heissen die möglichen Kompendium-Typen? **
+**Wie heissen die möglichen Kompendium-Typen?**  
 Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Cards, Item, JournalEntry, Macro, Playlist, RollTable, Scene**
 
-**Was wenn ich weitere Kompendien benötige?** 
+**Was wenn ich weitere Kompendien benötige?**  
 Das ist gar kein Problem: Wenn Du z.B. noch ein 3. Item-Kompendium brauchst, duplizierst Du eines der beiden Item-Kompendien (item-gm.db oder item-player.db) und gibst der Datei einen passenden neuen Namen (z.B. item-faehigkeiten). Beachte unbedingt, dass Du keine Umlaute, Sonderzeichen oder Großschreibung verwendest nur auch in Englisch existente Buchstaben und Bindestriche.
 Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Eintrag und fügst ihn direkt danach als Kopie wieder ein (sieht aus wie nachstehend). Dann nimmst Du die oben unter 2.f beschriebenen Anpassungen vor.
 
@@ -75,7 +75,7 @@ Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Ein
     },
 ```
 
-**Ein paar Tipps** 
+**Ein paar Tipps**  
 Auf jeden Fall: 
 
 1. Der Fehler, der hierbei am schnellsten passiert ist, das löschen eines Anführungszeichens oder Kommas, also genau arbeiten, dann läuft nachher auch alles (die Suche dauert länger). Und insbesondere auf das Komma hinter dem Schluss der geschweiften Klammern der packs achten, alle müssen eins haben, nur das letzte ganz unten nicht.
@@ -92,7 +92,7 @@ Auf jeden Fall:
 
     3. Journal erstellen und dann aus Deinem Modul-Kompendium die Zauber auf das Sheet ziehen (nicht aus der Welt selbst!). Davor oder danach kannst Du auch Deine Notiz in das JournalEntry-Kompendium exportieren (wichtig ist immer, das die Eintäge, die Du verlinken willst, bereits in Deinem Modul-Kompendium liegen, wenn Du sie zur Verknüpfung irgendwo hinziehst, da sich beim Verschieben danach die Links ändern würde; ein Link zu einem Item, das in Welt A liegt, lässt sich in Welt B nicht mehr aufrufen)
 
-**Ich habe schon Welten-Kompendien in V9, was muss ich tun, um diese in V10 weiterzunutzen?**
+**Ich habe schon Welten-Kompendien in V9, was muss ich tun, um diese in V10 weiterzunutzen?**  
 Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json Deines Kompendium-Moduls erforderlich, die ich Dir gerne zur besseren Übersichtlichkeit hier beschreibe:
 
 1.  Ändere das Wort "name" oben in "id"
@@ -161,5 +161,6 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
     ]
   },  
 ```
+
 
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
