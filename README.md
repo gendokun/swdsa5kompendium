@@ -47,7 +47,7 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 
 3. Sollte Foundry gerade aktiv sein schließe es jetzt einmal komplett und starte es neu. Wenn Du keinen Fehler eingebaut hast, ist dein Kompendien-Modul jetzt zu finden und in Deinen Welten verwendbar, denk dran, es in Deiner/n Welt/en unter "Manage Modules" zu aktivieren.
 
-**Welche Vorlagen sind denn jetzt hier eigentlich dabei?**  
+**Welche Vorlagen sind denn jetzt hier eigentlich dabei?**
 - 2x Actor: Für den GM (für NPC, Kreaturen etc, zum unsichtbar schalten) sowie für Spieler (z.B. für Archetypen, fertige Charaktere etc)  
 - 1x Cards: Für eventuell selbst erstellte Spielkartendecks etc.  
 - 2x Item: Für den GM (für was die Spieler nicht sehen sollen, zum unsichtbar schalten) sowie für Spieler (z.B. Gegenstände, Waffen, Rüstungen, Zauber, Fähigkeiten etc)  
@@ -75,8 +75,7 @@ Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Ein
     },
 ```
 
-**Ein paar Tipps**  
-Auf jeden Fall: 
+**Ein paar Tipps**
 
 1. Der Fehler, der hierbei am schnellsten passiert ist, das löschen eines Anführungszeichens oder Kommas, also genau arbeiten, dann läuft nachher auch alles (die Suche dauert länger). Und insbesondere auf das Komma hinter dem Schluss der geschweiften Klammern der packs achten, alle müssen eins haben, nur das letzte ganz unten nicht.
 
