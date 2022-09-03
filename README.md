@@ -28,13 +28,13 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
     e) **compatibility** ist die Foundry Version, die mindestens vorhanden sein muss, um das Modul nutzen zu können, die positiv verifiziert wurde, und die maximal funktional ist. I.d.R. genügt es, wenn hier jeweils "10" enthalten ist (mit Version 9 oder früher ist dieses Modul nicht kompatibel, s.o.)
     
     f) in jedem der db-Kompendien-Dateien folgende Änderungen vornehmen:
-    
-       - **label** ist der Titel, den dieses Kompendium nachher in Deiner Welt unter Kompendien haben soll, also der Anzeigetitel  
-       - **name** ist der Name der .db-Datei, aber ohne .db  
-       - **system** muss bei jedem Actor und item jetzt gepflegt werden, hier trägst Du das System ein, für das diese sein sollen (die Voreintragung dnd5e auf das gewünschte System ändern)  
-       - **entity** ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)  
-       - **path** ist der relative Pfad zur passenden .db-Datei, dieser ist immer packs/dateiname.db  
-       - **module** ist immer der name des dieses Moduls, siehe 2.a  
+      
+- **label** ist der Titel, den dieses Kompendium nachher in Deiner Welt unter Kompendien haben soll, also der Anzeigetitel  
+- **name** ist der Name der .db-Datei, aber ohne .db  
+- **system** muss bei jedem Actor und item jetzt gepflegt werden, hier trägst Du das System ein, für das diese sein sollen (die Voreintragung dnd5e auf das gewünschte System ändern)  
+- **entity** ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)  
+- **path** ist der relative Pfad zur passenden .db-Datei, dieser ist immer packs/dateiname.db  
+- **module** ist immer der name des dieses Moduls, siehe 2.a  
 
     Wenn Du keine zusätzlichen Kompendien benötigst, solltest Du das **label** aus der Vorgabe ändern (Stichwort auf System / Setting), Du musst aber auf jeden Fall **module** immer auf identisch zu **name** (s. 2a) ändern
 
