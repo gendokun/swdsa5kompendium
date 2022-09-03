@@ -13,7 +13,7 @@ In diesem Fall die zip-Datei so in den Ordner DATA\modules von Foundry VTT entpa
 **Anpassung für eigenen Nutzen:** 
 Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen:
 
-1. Eine Kopie vom Ordner kompendien-vorlagen-v10 erstellen und einen für das Vorhaben passenden eigenen Namen geben (ohne Freizeichen, alles klein), z.B. deadlands-kompendien
+1. Eine Kopie vom Ordner "kompendien-vorlagen-v10" erstellen und einen für das Vorhaben passenden eigenen Namen geben (ohne Freizeichen, alles klein), z.B. deadlands-kompendien
 
 2. Die Datei module.json im neuen Ordner mit einem Texteditor öffnen und folgende Änderungen vornehmen:
 
@@ -29,17 +29,13 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
     
     f) in jedem der db-Kompendien-Dateien folgende Änderungen vornehmen:
     
-       - **label** ist der Titel, den dieses Kompendium nachher in Deiner Welt unter Kompendien haben soll, also der Anzeigetitel
+       - **label** ist der Titel, den dieses Kompendium nachher in Deiner Welt unter Kompendien haben soll, also der Anzeigetitel  
+       - **name** ist der Name der .db-Datei, aber ohne .db  
+       - **system** muss bei jedem Actor und item jetzt gepflegt werden, hier trägst Du das System ein, für das diese sein sollen (die Voreintragung dnd5e auf das gewünschte System ändern)  
+       - **entity** ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)  
+       - **path** ist der relative Pfad zur passenden .db-Datei, dieser ist immer packs/dateiname.db  
+       - **module** ist immer der name des dieses Moduls, siehe 2.a  
 
-       - **name** ist der Name der .db-Datei, aber ohne .db
-
-       - **system** muss bei jedem Actor und item jetzt gepflegt werden, hier trägst Du das System ein, für das diese sein sollen (die Voreintragung dnd5e auf das gewünschte System ändern)
-
-       - **entity** ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)
-
-       - **path** ist der relative Pfad zur passenden .db-Datei, dieser ist immer packs/dateiname.db
-
-       - **module** ist immer der name des dieses Moduls, siehe 2.a
     Wenn Du keine zusätzlichen Kompendien benötigst, solltest Du das **label** aus der Vorgabe ändern (Stichwort auf System / Setting), Du musst aber auf jeden Fall **module** immer auf identisch zu **name** (s. 2a) ändern
 
     h) Die Einträge in den Klammern ganz unten zu url, manifest und download bitte in deinem Modul dann auch löschen, es soll ja nicht mehr zu meiner Vorlage verweisen und auch nicht bei Update meinerseits wieder überschrieben werden -> hierzu einfach die Einträge https... löschen so dass hinter dem Doppelpunkt nur  **""**, steht
@@ -69,22 +65,19 @@ Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Card
 
 **Was wenn ich weitere Kompendien benötige?** 
 Das ist gar kein Problem: Wenn Du z.B. noch ein 3. Item-Kompendium brauchst, duplizierst Du eines der beiden Item-Kompendien (item-gm.db oder item-player.db) und gibst der Datei einen passenden neuen Namen (z.B. item-faehigkeiten). Beachte unbedingt, dass Du keine Umlaute, Sonderzeichen oder Großschreibung verwendest nur auch in Englisch existente Buchstaben und Bindestriche.
-Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Eintrag und fügst ihn direkt danach als Kopie wieder ein (sieht aus wie nachstehend, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). Dann nimmst Du die oben unter 2.f beschriebenen Anpassungen vor.
+Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Eintrag und fügst ihn direkt danach als Kopie wieder ein (sieht aus wie nachstehend). Dann nimmst Du die oben unter 2.f beschriebenen Anpassungen vor.
 
+```javascript
     {
-
       "label": "Items GM",
-
       "name": "item-gm",
-
+      "system": "dnd5e",
       "entity": "Item",
-
       "path": "packs/item-gm.db",
-
       "module": "kompendien-vorlage"
-
     },
-    
+```
+
 **Ein paar Tipps** 
 Auf jeden Fall: 
 
@@ -109,68 +102,67 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 
 2. Lösche den Eintrag 
 
+```javascript
        "author": "",
+```
 
-    und füge stattdessen den Eintrag
+  und füge stattdessen den Eintrag
 
+```javascript
          "authors": [
-
            {
-
              "name": "",
-
              "discord": "",
-
              "flags": {}
-
            }
-
          ],
+```
 
     ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
-3. Löschen die Einträge
+3. Lösche die Zeilen
 
+```javascript
        "minimumCoreVersion": "9",
-
        "compatibleCoreVersion": "9",
+```
 
-    und füge stattdessen den Eintrag
+   und füge stattdessen den Eintrag
 
+```javascript
        "compatibility": {
-
           "minimum": "10",
-
           "verified": "10",
-
           "maximum": "10"
-
        },
+```
 
-    ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
+  ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
 
 4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
 
+```javascript
        "system": "dnd5e",
+```
 
    wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
 
-5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_). 
-Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern:
+5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Installation angezeigt wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen. Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern.
 
 ```javascript
-    "system": "dnd5e",  
-   "relationships": {  
-      "systems": [  
-        {  
-          "id": "dnd5e",  
-          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",  
-          "compatibility": {  
-              "minimum": "2.0.0",  
-              "verified": "2.0"  
-          }  
+  "system": "dnd5e",  
+  "relationships": {  
+    "systems": [  
+      {  
+        "id": "dnd5e",  
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",  
+        "compatibility": {  
+          "minimum": "2.0.0",  
+          "verified": "2.0"  
         }  
-      ],  
+      }  
+    ]
+  },  
 ```
 
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
