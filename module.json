@@ -25,7 +25,6 @@
       "label": "Actors GM",
       "name": "actor-gm",
       "system": "dnd5e",
-      "entity": "Actor",
       "path": "packs/actor-gm.db",
       "module": "kompendien-vorlage-v10",
       "type": "Actor",
@@ -35,7 +34,6 @@
       "label": "Actors Spieler",
       "name": "actor-player",
       "system": "dnd5e",
-      "entity": "Actor",
       "path": "packs/actor-player.db",
       "module": "kompendien-vorlage-v10",
       "type": "Actor",
@@ -44,7 +42,6 @@
     {
       "label": "Kartendecks",
       "name": "cards",
-      "entity": "Cards",
       "path": "packs/cards.db",
       "module": "kompendien-vorlage-v10",
       "type": "Cards",
@@ -54,7 +51,6 @@
       "label": "Items GM",
       "name": "item-gm",
       "system": "dnd5e",
-      "entity": "Item",
       "path": "packs/item-gm.db",
       "module": "kompendien-vorlage-v10",
       "type": "Item",
@@ -64,7 +60,6 @@
       "label": "Items Spieler",
       "name": "item-player",
       "system": "dnd5e",
-      "entity": "Item",
       "path": "packs/item-player.db",
       "module": "kompendien-vorlage-v10",
       "type": "Item",
@@ -73,7 +68,6 @@
     {
       "label": "Journals GM",
       "name": "journal-gm",
-      "entity": "JournalEntry",
       "path": "packs/journal-gm.db",
       "module": "kompendien-vorlage-v10",
       "type": "JournalEntry",
@@ -82,7 +76,6 @@
     {
       "label": "Journals Spieler",
       "name": "journal-player",
-      "entity": "JournalEntry",
       "path": "packs/journal-player.db",
       "module": "kompendien-vorlage-v10",
       "type": "JournalEntry",
@@ -91,7 +84,6 @@
     {
       "label": "Makros",
       "name": "macro",
-      "entity": "Macro",
       "path": "packs/macro.db",
       "module": "kompendien-vorlage-v10",
       "type": "Macro",
@@ -100,7 +92,6 @@
     {
       "label": "Playlists",
       "name": "playlist",
-      "entity": "Playlist",
       "path": "packs/playlist.db",
       "module": "kompendien-vorlage-v10",
       "type": "Playlist",
@@ -109,7 +100,6 @@
     {
       "label": "Tables",
       "name": "rolltable",
-      "entity": "RollTable",
       "path": "packs/rolltable.db",
       "module": "kompendien-vorlage-v10",
       "type": "RollTable",
@@ -118,7 +108,6 @@
     {
       "label": "Scenes",
       "name": "scene",
-      "entity": "Scene",
       "path": "packs/scene.db",
       "module": "kompendien-vorlage-v10",
       "type": "Scene",
