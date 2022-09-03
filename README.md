@@ -43,27 +43,27 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 
     Wenn Du keine zusätzlichen Kompendien benötigst, solltest Du das **label** aus der Vorgabe ändern (Stichwort auf System / Setting), Du musst aber auf jeden Fall **module** immer auf identisch zu **name** (s. 2a) ändern
 
-    h) Die Einträge in den Klammern ganz unten zu url, manifest und download bitte in deinem Modul dann auch löschen, es soll ja nicht mehr zu meiner Vorlage verweisen und auch nicht bei Update meinerseits wieder überschrieben werden -> hierzu einfach die Einträge https... löschen so dass hinter dem Doppelpunkt nur  **""**, steht
+    g) Die Einträge in den Klammern ganz unten zu url, manifest und download bitte in deinem Modul dann auch löschen, es soll ja nicht mehr zu meiner Vorlage verweisen und auch nicht bei Update meinerseits wieder überschrieben werden -> hierzu einfach die Einträge https... löschen so dass hinter dem Doppelpunkt nur  **""**, steht
 
 3. Sollte Foundry gerade aktiv sein schließe es jetzt einmal komplett und starte es neu. Wenn Du keinen Fehler eingebaut hast, ist dein Kompendien-Modul jetzt zu finden und in Deinen Welten verwendbar, denk dran, es in Deiner/n Welt/en unter "Manage Modules" zu aktivieren.
 
 **Welche Vorlagen sind denn jetzt hier eigentlich dabei?** 
 
-- 2x Actor: Für den GM (für NPC, Kreaturen etc, zum unsichtbar schalten) sowie für Spieler (z.B. für Archetypen, fertige Charaktere etc)
+        2x Actor: Für den GM (für NPC, Kreaturen etc, zum unsichtbar schalten) sowie für Spieler (z.B. für Archetypen, fertige Charaktere etc)  
 
-- 1x Cards: Für eventuell selbst erstellte Spielkartendecks etc.
+        1x Cards: Für eventuell selbst erstellte Spielkartendecks etc.  
 
-- 2x Item: Für den GM (für was die Spieler nicht sehen sollen, zum unsichtbar schalten) sowie für Spieler (z.B. Gegenstände, Waffen, Rüstungen, Zauber, Fähigkeiten etc)
+        2x Item: Für den GM (für was die Spieler nicht sehen sollen, zum unsichtbar schalten) sowie für Spieler (z.B. Gegenstände, Waffen, Rüstungen, Zauber, Fähigkeiten etc)  
 
-- 2x Journal: Für den GM (für alles was die Spieler nicht sehen sollen wie Abenteuer, Handouts, zum unsichtbar schalten) sowie für Spieler (z.B. Regeln, Charakterinfos, Cheatsheets etc)
+        2x Journal: Für den GM (für alles was die Spieler nicht sehen sollen wie Abenteuer, Handouts, zum unsichtbar schalten) sowie für Spieler (z.B. Regeln, Charakterinfos, Cheatsheets etc)  
 
-- 1x Macro: Erfordert i.d.R. keine Differenzierung zwischen GM + Spieler
+        1x Macro: Erfordert i.d.R. keine Differenzierung zwischen GM + Spieler  
 
-- 1x Playlist: Für Spieler irrelevant, steuert eh der GM
+        1x Playlist: Für Spieler irrelevant, steuert eh der GM  
 
-- 1x Rolltable, da es i.d.R. eh Sinn macht oder gar erforderlich ist, diese zur Nutzung ins Spiel zu importieren, muss hier nicht zwischen GM + Spieler differenziert werden
+        1x Rolltable, da es i.d.R. eh Sinn macht oder gar erforderlich ist, diese zur Nutzung ins Spiel zu importieren, muss hier nicht zwischen GM + Spieler differenziert werden  
 
-- 1x Scene: Szenen sind nur für den GM relevant (bei Nutzung einer Landkarte oder Battlemap schaltest Du als GM einfach die Szene den Spielern frei, nicht aber das Kompendium, dies gehört unsichtbar)
+        1x Scene: Szenen sind nur für den GM relevant (bei Nutzung einer Landkarte oder Battlemap schaltest Du als GM einfach die Szene den Spielern frei, nicht aber das Kompendium, dies gehört unsichtbar)  
 
 **Wie heissen die möglichen Kompendium-Typen? **
 Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Cards, Item, JournalEntry, Macro, Playlist, RollTable, Scene**
