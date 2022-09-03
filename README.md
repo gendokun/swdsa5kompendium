@@ -35,7 +35,7 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 
         system: muss bei jedem Actor und item jetzt gepflegt werden, hier trägst Du das System ein, für das diese sein sollen (die Voreintragung dnd5e auf das gewünschte System ändern)  
 
-        entity: ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)  
+        type: ist der Typ des Kompendiums. Meine Vorlage sollte i.d.R. hier keine Änderung erfordern, da ich das schon zur universellen Nutzung durchdacht habe, ich liste aber unten die Typen und Inhalte der Vorlage noch einmal für Übersicht und Verständnis (bzw. falls du andere benötigst, z.B. ein drittes bis zehntes item-Kompendium um nicht mit Ordnern hierin arbeiten zu müssen)  
 
         path: ist der relative Pfad zur passenden .db-Datei, dieser ist immer packs/dateiname.db  
 
@@ -58,7 +58,8 @@ Um das Modul für eigene Zwecke zu nutzen einfach den folgenden Schritten folgen
 - 1x Scene: Szenen sind nur für den GM relevant (bei Nutzung einer Landkarte oder Battlemap schaltest Du als GM einfach die Szene den Spielern frei, nicht aber das Kompendium, dies gehört unsichtbar)  
 
 **Wie heissen die möglichen Kompendium-Typen?**  
-Es gibt die folgenden 8 (genau so einzutragen bei entity, s. 2.f): **Actor, Cards, Item, JournalEntry, Macro, Playlist, RollTable, Scene**
+Es gibt die folgenden 8 (genau so einzutragen bei type, s. 2.f): **Actor, Cards, Item, JournalEntry, Macro, Playlist, RollTable, Scene**
+Achtung: Früher gab es entity und/oder type, ab V10 wird ausschließlich **type** genutzt.
 
 **Was wenn ich weitere Kompendien benötige?**  
 Das ist gar kein Problem: Wenn Du z.B. noch ein 3. Item-Kompendium brauchst, duplizierst Du eines der beiden Item-Kompendien (item-gm.db oder item-player.db) und gibst der Datei einen passenden neuen Namen (z.B. item-faehigkeiten). Beachte unbedingt, dass Du keine Umlaute, Sonderzeichen oder Großschreibung verwendest nur auch in Englisch existente Buchstaben und Bindestriche.
@@ -69,7 +70,7 @@ Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Ein
       "label": "Items GM",
       "name": "item-gm",
       "system": "dnd5e",
-      "entity": "Item",
+      "type": "Item",
       "path": "packs/item-gm.db",
       "module": "kompendien-vorlage"
     },
@@ -135,7 +136,9 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 
   ein.
 
-4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
+4. Lösche in allen **packs**-Einträgen alle Zeilen mit **entity**, künftig ist nur noch **type** erforderlich. Solltest Du nur entity, nicht aber type haben, ändere einfach jeweils das Wort "entity" in "type".
+
+5. Bei allen **packs**-Einträgen mit type **Actor** bzw. **item** ergänze den Eintrag
 
 ```javascript
        "system": "dnd5e",
@@ -143,7 +146,7 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
 
    wobei Du "dnd5e" hier im Beispiel natürlich durch das von Dir genutzte System (z.B. "coc7", "swade" usw.) ersetzt.
 
-5. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Aktivierung und Nutzung angeboten wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen. Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern.
+6. Optional: Wenn Du möchtest, dass Dein Kompendium-Modul nur im System Deiner Wahl überhaupt zur Aktivierung und Nutzung angeboten wird, kannst Du den folgenden Eintrag in Deiner module.json ergänzen. Die Darstellung erfolgt hier am Beispiel von dnd5e, dies kannst Du auf das System Deiner Wahl ändern.
 
 ```javascript
   "system": "dnd5e",  
