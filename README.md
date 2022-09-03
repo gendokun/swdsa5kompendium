@@ -94,7 +94,7 @@ Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Ein
 **Ich habe schon Welten-Kompendien in V9, was muss ich tun, um diese in V10 weiterzunutzen?**  
 Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json Deines Kompendium-Moduls erforderlich, die ich Dir gerne zur besseren Übersichtlichkeit hier beschreibe:
 
-1.  Ändere das Wort "name" oben in "id"
+1.  Ändere das Wort "name" oben in der Datei in "id". Der Modul-Name heisst jetzt zwar id, sonst ändert sich aber nichts, er braucht auch nicht geändert zu werden.
 
 2. Lösche den Eintrag 
 
