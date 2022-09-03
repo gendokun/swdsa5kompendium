@@ -118,7 +118,7 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
          ],
 ```
 
-    ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
+    ein.
 
 3. Lösche die Zeilen
 
@@ -137,7 +137,7 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
        },
 ```
 
-  ein, aber ohne Freizeilen (_geht hier leider nicht anders wenn es formatiert sein soll_).
+  ein.
 
 4. Bei allen **packs**-Einträgen mit eintity / type **Actor** bzw.  **item** ergänze den Eintrag
 
