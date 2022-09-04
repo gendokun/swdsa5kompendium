@@ -187,4 +187,7 @@ Allerdings empfehle ich Dir hier eine andere Vorgehensweise:
     "module": "kompendien-vorlage-v10"
 ```
 
-So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
+4. Zu guter letzt musst Du natürlich die frisch erzeugte *.db (* ist der "name" Deines Abenteuer-Kompendiums) aus dem packs-Ordner Deiner Welt in den packs-Ordner Deines Moduls kopieren. Optional könntest Du danach (ich empfehle Ingame in Foundry) das lokal in der Welt erstellte Abenteuer-Kompendium löschen (natürlich nach Test, das es im Modul funktioniert).  
+  
+
+So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien, jetzt auch in Foundry V10!
