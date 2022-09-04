@@ -72,7 +72,7 @@ Dann gehst Du in die module.json und kopierst in dem Fall den ganzen Bereich-Ein
       "system": "dnd5e",
       "type": "Item",
       "path": "packs/item-gm.db",
-      "module": "kompendien-vorlage"
+      "module": "kompendien-vorlage-v10"
     },
 ```
 
@@ -156,5 +156,35 @@ Hierfür sind tatsächliche einige manuelle Modifikationen in der module.json De
   },  
 ```
 
+**Wie kann ich die mit V10 neuen Abenteuer-Kompendien weltenübergreifend nutzen?**  
+Hierfür gibt es einen neuen Typen "Adventure", nachfolgend zuerst ein Beispiel, wie der neue Eintrag aussieht, der sich unter **packs** nachher befinden muss:
+
+```javascript
+    {
+      "label": "Abenteuer Tangaroa",
+      "type": "Adventure",
+      "name": "abenteuer-tangaroa",
+      "path": "packs/abenteuer-tangaroa.db",
+      "system": "CoC7",
+      "module": "kompendien-vorlage-v10"
+      "private": false,
+      "flags": {}
+    }
+```
+
+Allerdings empfehle ich Dir hier eine andere Vorgehensweise:
+
+1. Erstelle das Abenteuer als Kompendium Typ "Adventure" in Deiner Welt.
+
+2. Öffne die Datei "world.json" im Data-Ordner **Worlds**, das ist die Welt, in der Du das Abenteuer-Kompendium gerade angelegt hast. Hier suchst Du den Eintrag unter **packs** mit **"type": "Adventure"** und Deinem gewählten Namen (**"Label"**). Kopiere diesen Bereich wie im Beispiel zuvor von geschweifter zu geschweifter Klammer.
+
+3. Öffne die "module.json" Deines Kompendiums, wo das Abenteuer zu finden sein soll. Füge das gerade Kopierte unter **packs** ein. Folgende Änderungen sind noch erforderlich:
+
+    Befehlschließendes Komma: Prüfe ab Ende des Eintrags hinter der geschweiften Klammer, das jeder Eintrag ein "**,**" dahinter haben muss, außer der letzte (dort darf kein Komma sein).
+
+    Ergänze folgenden Eintrag (natürlich mit Deinem Modulnamen, siehe Beispiel hierüber): 
+```javascript
+    "module": "kompendien-vorlage-v10"
+```
 
 So, genug geschrieben ... ich hoffe, das Modul und diese Anleitung hilft Dir, viel Spaß beim Bauen von weltenumspannenden Kompendien in Foundry V10!
