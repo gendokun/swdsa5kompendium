@@ -180,9 +180,9 @@ Allerdings empfehle ich Dir hier eine andere Vorgehensweise:
 
 3. Öffne die "module.json" Deines Kompendiums, wo das Abenteuer zu finden sein soll. Füge das gerade Kopierte unter **packs** ein. Folgende Änderungen sind noch erforderlich:
 
-    Befehlschließendes Komma: Prüfe ab Ende des Eintrags hinter der geschweiften Klammer, das jeder Eintrag ein "**,**" dahinter haben muss, außer der letzte (dort darf kein Komma sein).
+    **Befehlschließendes Komma**: Prüfe ab Ende des Eintrags hinter der geschweiften Klammer, das jeder Eintrag ein "**,**" dahinter haben muss, außer der letzte (dort darf kein Komma sein).
 
-    Ergänze folgenden Eintrag (natürlich mit Deinem Modulnamen, siehe Beispiel hierüber): 
+    **Moduldefinition**: Ergänze folgenden Eintrag (natürlich mit Deinem Modulnamen, siehe Beispiel hierüber): 
 ```javascript
     "module": "kompendien-vorlage-v10"
 ```
