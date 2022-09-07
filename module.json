@@ -1,7 +1,7 @@
 {
-  "id": "kompendien-vorlage-v10",
-  "title": "Vorlage für eigene Kompendien (V10)",
-  "description": "Vorlage zur Erstellung einer eigenen Kompendien-Sammlung in Foundry VTT Version 10",
+  "id": "swdsa5kompendium",
+  "title": "DSA-SharedKompendium",
+  "description": "Kompendium um über DSA Welten hinweg Daten zu migrieren",
   "authors": [
     {
       "name": "KarstenW",
@@ -22,62 +22,54 @@
   "languages": [],
   "packs": [
     {
-      "label": "Actors GM",
-      "name": "actor-gm",
-      "system": "dnd5e",
+      "label": "NPC&Monster",
+      "name": "actors-gm",
+      "system": "dsa5",
       "path": "packs/actor-gm.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Actor",
       "private": false
     },
     {
-      "label": "Actors Spieler",
+      "label": "Spieler Charaktere",
       "name": "actor-player",
-      "system": "dnd5e",
+      "system": "dsa5",
       "path": "packs/actor-player.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Actor",
       "private": false
     },
     {
-      "label": "Kartendecks",
-      "name": "cards",
-      "path": "packs/cards.db",
-      "module": "kompendien-vorlage-v10",
-      "type": "Cards",
-      "private": false
-    },
-    {
-      "label": "Items GM",
+      "label": "Items Meister",
       "name": "item-gm",
-      "system": "dnd5e",
+      "system": "dsa5",
       "path": "packs/item-gm.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Item",
       "private": false
     },
     {
       "label": "Items Spieler",
       "name": "item-player",
-      "system": "dnd5e",
+      "system": "dsa5",
       "path": "packs/item-player.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Item",
       "private": false
     },
     {
-      "label": "Journals GM",
+      "label": "Journale Meister",
       "name": "journal-gm",
       "path": "packs/journal-gm.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "JournalEntry",
       "private": false
     },
     {
-      "label": "Journals Spieler",
+      "label": "Journale Spieler",
       "name": "journal-player",
       "path": "packs/journal-player.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "JournalEntry",
       "private": false
     },
@@ -85,7 +77,7 @@
       "label": "Makros",
       "name": "macro",
       "path": "packs/macro.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Macro",
       "private": false
     },
@@ -93,29 +85,21 @@
       "label": "Playlists",
       "name": "playlist",
       "path": "packs/playlist.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Playlist",
       "private": false
     },
     {
-      "label": "Tables",
-      "name": "rolltable",
-      "path": "packs/rolltable.db",
-      "module": "kompendien-vorlage-v10",
-      "type": "RollTable",
-      "private": false
-    },
-    {
-      "label": "Scenes",
+      "label": "Szenen",
       "name": "scene",
       "path": "packs/scene.db",
-      "module": "kompendien-vorlage-v10",
+      "module": "swdsa5kompendium",
       "type": "Scene",
       "private": false
     }
   ],
   "socket": false,
-  "url": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10",
-  "manifest": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/raw/master/module.json",
-  "download": "https://gitlab.com/KarstenW76/kompendien-vorlage-v10/-/archive/master/kompendien-vorlage-v10-master.zip"
+  "url": "https://github.com/gendokun/swdsa5kompendium/",
+  "manifest": "https://raw.githubusercontent.com/gendokun/swdsa5kompendium/master/module.json",
+  "download": "https://github.com/gendokun/swdsa5kompendium/releases/download/1.0.1/sharedkompendium1.0.1.zip"
 }
